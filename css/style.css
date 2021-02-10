@@ -1,23 +1,24 @@
-html{
+html {
     box-sizing: border-box;
 }
+
 *,
 *::after,
-*::before{
+*::before {
     box-sizing: inherit;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-.container{
+.container {
     width: 1220px;
     padding: 0 10px;
     margin: 0 auto;
 }
 
-body{
+body {
     color: #1B1818;
     font-size: 16px;
     line-height: 19px;
@@ -26,22 +27,22 @@ body{
     /*font-family: 'Fira Sans', sans-serif;*/
 }
 
-.header{
+.header {
     background: #332208;
 }
 
-.header__inner{
+.header__inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100px;
 }
 
-.menu__list{
+.menu__list {
     display: flex;
 }
 
-.menu-item{
+.menu-item {
     margin: 0 15px;
 }
 
@@ -55,11 +56,11 @@ body{
     border-bottom: 1px solid transparent; /* нужно для того чтобы подчеркивание появлялось плавно, тк transition работает с изменением (цвета с прозрачного на белый*/
 }
 
-.menu__list-link:hover{
+.menu__list-link:hover {
     border-bottom: 1px solid #FEFEFE;
 }
 
-.phone{
+.phone {
     font-size: 18px;
     line-height: 21px;
     color: #FEFEFE;
@@ -74,7 +75,7 @@ body{
     padding: 50px 0 30px;
 }
 
-.top__content{
+.top__content {
     text-align: center;
     padding-top: 90px;
     width: 50%;
@@ -88,14 +89,15 @@ body{
     margin: 0 auto 20px;
     width: 454px;
 }
-.top__text{
+
+.top__text {
     font-size: 24px;
     line-height: 28px;
     margin-bottom: 60px;
     width: 470px;
 }
 
-.app__btn{
+.app__btn {
     text-transform: uppercase;
     color: #FEFEFE;
     background: #C5AC2D;
@@ -103,16 +105,18 @@ body{
     transition: all 0.5s;
     border: 1px solid transparent;
 }
-.app__btn:hover{
+
+.app__btn:hover {
     color: #C5AC2D;
     background: #FEFEFE;
     border: 1px solid #C5AC2D;
 }
 
-.top__slider{
+.top__slider {
     width: 50%;
 }
-.top__slider .slick-dots{
+
+.top__slider .slick-dots {
     position: absolute;
     right: 0;
     top: 50%;
@@ -129,7 +133,7 @@ body{
     margin-bottom: 5px;
 }
 
-.slick-dots  button{
+.slick-dots button {
     font-size: 0;
     width: 8px;
     height: 8px;
@@ -139,7 +143,7 @@ body{
     padding: 0;
 }
 
-.slick-active  button{
+.slick-active button {
     width: 16px;
     height: 16px;
 }
@@ -150,23 +154,24 @@ body{
     /*padding-right: 100px;*/
     text-align: center;
 }
-.top__slider-text span + span{
+
+.top__slider-text span + span {
     padding-left: 12px;
 }
 
-.top__bottom{
+.top__bottom {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
 }
 
-.top__items{
+.top__items {
     width: 50%;
     display: flex;
     justify-content: space-around;
 }
 
-.top__item{
+.top__item {
     border: 1px solid #1B1818;
     padding: 10px;
     width: 150px;
@@ -181,37 +186,37 @@ body{
     transition: all 0.5s;
 }
 
-.top__item:hover{
+.top__item:hover {
     transform: scale(1.25);
 }
 
-.top__links{
+.top__links {
     padding-right: 80px;
 }
 
-.top__link{
+.top__link {
     color: #1B1818;
     border-bottom: 1px solid #1B1818;
 }
 
-.top__link + .top__link{
+.top__link + .top__link {
     margin-left: 20px;
 }
 
-.rent{
+.rent {
     padding-top: 100px;
 }
 
-.rent__inner{
+.rent__inner {
     display: flex;
     justify-content: space-between;
 }
 
-.rent__content{
+.rent__content {
     width: 300px;
 }
 
-.rent__title{
+.rent__title {
     font-family: 'Fira Sans', sans-serif;
     font-weight: 500;
     font-size: 24px;
@@ -219,13 +224,15 @@ body{
     margin-bottom: 30px;
 }
 
-.rent__text{
+.rent__text {
     margin-bottom: 20px;
 }
-.rent__text + .rent__text{
+
+.rent__text + .rent__text {
     margin-bottom: 40px;
 }
-.rent__item{
+
+.rent__item {
     width: 250px;
     min-height: 350px;
     border: 1px solid #332208;
@@ -236,7 +243,7 @@ body{
     justify-content: space-around;
 }
 
-.rent__item-num{
+.rent__item-num {
     font-family: 'Fira Sans', sans-serif;
     font-weight: 500;
     font-size: 96px;
@@ -244,7 +251,7 @@ body{
     opacity: 0.05;
 }
 
-.rent__item-title{
+.rent__item-title {
     font-family: 'Fira Sans', sans-serif;
     font-weight: 500;
     font-size: 18px;
@@ -252,36 +259,37 @@ body{
     margin-bottom: auto;
 }
 
-.benefits{
+.benefits {
     padding: 100px;
 }
 
-.benefits__title{
+.benefits__title {
     font-family: 'Fira Sans', sans-serif;
     font-weight: 500;
     font-size: 24px;
     line-height: 29px;
     margin-bottom: 50px;
 }
+
 .benefits__items {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.benefits__list{
+.benefits__list {
     width: 300px;
     list-style: none;
 }
 
-.benefits__list-item{
+.benefits__list-item {
     margin-bottom: 27px;
     padding-right: 26px;
     position: relative;
     text-align: right;
 }
 
-.benefits__list-item::after{
+.benefits__list-item::after {
     content: '';
     position: absolute;
     width: 16px;
@@ -293,40 +301,41 @@ body{
 }
 
 .benefits__list-item:nth-child(1),
-.benefits__list-item:nth-child(7){
+.benefits__list-item:nth-child(7) {
     margin-right: 13px;
 }
 
 .benefits__list-item:nth-child(2),
-.benefits__list-item:nth-child(6){
+.benefits__list-item:nth-child(6) {
     margin-right: 60px;
 }
 
 .benefits__list-item:nth-child(3),
-.benefits__list-item:nth-child(5){
+.benefits__list-item:nth-child(5) {
     margin-right: 112px;
 }
 
-.benefits__list-item:nth-child(4){
+.benefits__list-item:nth-child(4) {
     margin-right: 158px;
 }
 
 
-.benefits__content{
+.benefits__content {
     width: 300px;
     text-align: right;
 }
-.benefits__text{
+
+.benefits__text {
     margin-bottom: 30px;
     text-align: right;
 }
 
-.benefits__text + .benefits__text{
+.benefits__text + .benefits__text {
     width: 267px;
     margin-left: auto;
 }
 
-.video__popup{
+.video__popup {
     display: inline-block;
     text-transform: uppercase;
     text-align: center;
@@ -339,7 +348,7 @@ body{
     position: relative;
 }
 
-.video__popup::before{
+.video__popup::before {
     content: '';
     position: absolute;
     width: 25px;
@@ -349,3 +358,55 @@ body{
     left: 34px;
 }
 
+.reviews {
+    padding: 100px 0;
+    background-color: #332208;
+    color: #FEFEFE;
+}
+
+.reviews__title {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 70px;
+}
+
+.reviews__item {
+    width: 270px;
+    min-height: 300px;
+    border: 1px solid #C5AC2D;
+    padding: 45px 30px;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.slick-initialized .reviews__item {
+    display: flex;
+}
+
+.reviews__item-name {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.reviews__slider .slick-dots button {
+    background-color: #C5AC2D;
+}
+
+.reviews__slider .slick-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+}
+
+.reviews__slider button {
+    margin: 0 5px;
+    line-height: 12px;
+}
