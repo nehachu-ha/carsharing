@@ -87,14 +87,14 @@ body {
     font-size: 48px;
     line-height: 58px;
     margin: 0 auto 20px;
-    width: 454px;
+    max-width: 454px;
 }
 
 .top__text {
     font-size: 24px;
     line-height: 28px;
     margin: 0 auto 60px;
-    width: 470px;
+    max-width: 470px;
 }
 
 .app__btn {
@@ -489,6 +489,7 @@ body {
     display: flex;
     justify-content: space-between;
     margin-bottom: 21px;
+    align-items: center;
 }
 
 .footer__social {
@@ -506,19 +507,239 @@ body {
     display: none;
 }
 
-@media (max-width: 860px) {
-    .menu-item {
+@media (max-width: 1405px) {
+    .benefits__content {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .benefits__image {
+        width: 40%;
+    }
+
+    .benefits__items {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .benefits__text + .benefits__text {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1140px) {
+    .rent__inner {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .rent__content {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+
+@media (max-width: 1000px) {
+    .top__heading {
+        display: block;
+    }
+
+    .top__content {
+        width: 100%;
+        padding-top: 30px;
+    }
+
+    .top__slider {
+        width: 100%;
+    }
+
+    .top__slider-text {
+        text-align: center;
+    }
+
+    .top__slider-images {
+        margin: 0 auto;
+    }
+
+    .top__bottom {
+        display: block;
+    }
+
+    .top__links {
+        padding-right: 0;
+        padding-top: 50px;
+        text-align: center;
+    }
+
+    .top__items {
+        width: 100%;
+    }
+
+    .footer .menu {
         display: none;
+    }
+}
+
+@media (max-width: 860px) {
+    .menu {
+        order: 1;
+    }
+
+    .menu__list {
+        display: block;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        right: 0;
+        background-color: #332208;
+        text-align: center;
+        padding: 20px 0;
+        transform: translateY(-500px);
+    }
+
+    .menu__list.menu__list--active {
+        transform: translateY(0);
+        transition: all 0.5s;
+    }
+
+    .menu__list-link {
+        display: block;
+        padding: 20px 0;
     }
 
     .menu-btn {
         display: block;
-        width: 30px;
-        height: 30px;
+        width: 35px;
+        height: 24px;
         border: none;
         border-top: 2px solid #FEFEFE;
         border-bottom: 2px solid #FEFEFE;
         background-color: transparent;
+        position: relative;
+    }
+
+    .menu-btn::before {
+        content: '';
+        position: absolute;
+        width: 35px;
+        height: 2px;
+        background-color: #FEFEFE;
+        top: 9px;
+        left: 0;
+    }
+
+    .rent__item {
+        margin-bottom: 30px;
+    }
+
+    .benefits__image {
+        width: 55%;
+    }
+
+    .feedback__image {
+        display: none;
+    }
+
+    .footer,
+    .feedback,
+    .reviews,
+    .benefits,
+    .rent,
+    .top {
+        padding: 50px 0;
+    }
+}
+
+@media (max-width: 720px) {
+    .benefits__list-item {
+        margin-right: 0;
+        padding-left: 26px;
+        padding-right: 0;
+        text-align: left;
+    }
+
+    .benefits__list-item::after {
+        right: auto;
+        left: 0;
+    }
+
+    .benefits__image {
+        width: 70%;
+    }
+
+}
+
+@media (max-width: 650px) {
+    .rent__item {
+        width: 100%;
+        min-height: 245px;
+    }
+
+    .rent__item-title {
+        margin-bottom: 20px;
+    }
+
+    .rent__content {
+        text-align: center;
+    }
+}
+
+@media (max-width: 525px) {
+    .top__items {
+        flex-wrap: wrap;
+    }
+
+    .top__item {
+        margin: 20px;
+    }
+
+    .benefits__list-item:nth-child(3),
+    .benefits__list-item:nth-child(5),
+    .benefits__list-item:nth-child(4),
+    .benefits__list-item:nth-child(2),
+    .benefits__list-item:nth-child(6) {
+        margin-right: 0;
+    }
+
+}
+
+@media (max-width: 460px) {
+
+}
+
+@media (max-width: 450px) {
+    .footer__top {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer .phone {
+        margin-top: 30px;
+        display: inline-block;
+    }
+}
+
+@media (max-width: 410px) {
+    .top__item {
+        width: 100%;
+    }
+
+    .top__links {
+        text-align: center;
+    }
+
+    .top__link {
+        display: inline-block;
+        margin: 10px 15px;
+    }
+
+    .top__link + .top__link {
+        margin-left: 0;
+    }
+
+    .rent__item {
+        margin: 30px 0;
     }
 }
 
